@@ -50,7 +50,6 @@ def registration_without_confirm_password():
         driver.get('http://localhost:8080/signup')
         driver.find_element_by_id('username').send_keys(NAME)
         driver.find_element_by_id('password').send_keys(PASS)
-        driver.find_element_by_id('password-confirm').send_keys(PASS)
         driver.find_element_by_xpath('//*[@id="app"]/section/div/div[2]'
                                      '/div/div/div[2]/form/div[5]/div[2]/div/div').click()
         driver.find_element_by_xpath('//*[@id="app"]/section/div/div[2]/div/article/div[2]')
